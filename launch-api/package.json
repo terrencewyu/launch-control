@@ -1,0 +1,16 @@
+{
+  "name": "launch-api",
+  "version": "1.0.0",
+  "description": "API for the Launch Control application",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrencewyu/launch-control.git"
+  },
+  "homepage": "https://github.com/terrencewyu/launch-control#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "outDir": "tmp",
+        "target": "ES2015",
+        "sourceMap": true,
+        "removeComments": true,
+        "noEmit": false,    
+        "typeRoots": [
+            "node_modules/@types",
+            "types"
+        ],
+        "lib": [
+            "es2015",
+            "esnext.asynciterable"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+    ]
+}
