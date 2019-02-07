@@ -9,8 +9,11 @@
   },
   "homepage": "https://github.com/terrencewyu/launch-control#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.5"
+    "request-promise-native": "^1.0.5",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
   }
 }
