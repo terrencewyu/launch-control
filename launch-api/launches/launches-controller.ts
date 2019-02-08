@@ -28,7 +28,7 @@ export class LaunchesController {
         return result;
     }
 
-    private static async convertToLaunches(launchData: any): Promise<Launch[]> {
+    public static async convertToLaunches(launchData: any): Promise<Launch[]> {
         const launches: Launch[] = [];
         const jsonLaunchData = JSON.parse(launchData);
         for (const event of jsonLaunchData.launches) {

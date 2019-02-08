@@ -3,11 +3,14 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "module": "commonjs",
-        "outDir": "tmp",
+        "outDir": "./dist",
         "target": "ES2015",
         "sourceMap": true,
         "removeComments": true,
-        "noEmit": false,    
+        "noEmit": false,
+        "types": [
+            "node"
+          ],
         "typeRoots": [
             "node_modules/@types",
             "types"
