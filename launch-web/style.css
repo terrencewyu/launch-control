@@ -1,0 +1,14 @@
+body {
+    font-family: "Helvetica";
+    background-color: #90bade;
+    color: #333;
+}
+
+.launch-event {
+    background: transparent url(./rocket-icon-vector.png) no-repeat left top;
+    padding-left: 70px;
+}
+
+li {
+    list-style-type: none;
+}

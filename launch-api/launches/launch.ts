@@ -4,7 +4,7 @@ export interface Launch {
     name: string;
     agency: LaunchUrlData;
     location: LaunchUrlData;
-    time: number;
+    time: string;
     url: string;
 }
 

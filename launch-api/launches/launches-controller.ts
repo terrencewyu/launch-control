@@ -2,16 +2,16 @@
 
 import * as request from 'request-promise-native';
 import { Launch } from './launch';
+import { Request, Response } from 'express';
 
 export class LaunchesController {
 
-    public async getLaunches(): Promise<Launch[]> {
+    public async getLaunches(req: Request, res: Response) {
         console.log('Getting launches...');
         const launchData = await LaunchesController.requestFromLaunchLibarary();
         const launches = await LaunchesController.convertToLaunches(launchData);
-        // console.log(JSON.stringify(launchData));
         console.log(JSON.stringify(launches));
-        return launches;
+        return res.json(launches);
     }
     
     private static async requestFromLaunchLibarary(): Promise<any> {
@@ -35,14 +35,14 @@ export class LaunchesController {
             const launch: Launch  = {
                 name: event.name,
                 agency: { 
-                    name: event.lsp.agency, 
+                    name: event.lsp.name, 
                     url: event.lsp.wikiURL 
                 },
                 location: { 
                     name: event.location.name, 
                     url: event.location.wikiURL 
                 },
-                time: event.isostart,
+                time: event.windowstart,
                 url: event.wikiURL
             }
             launches.push(launch);
