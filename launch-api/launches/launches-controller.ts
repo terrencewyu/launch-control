@@ -10,7 +10,7 @@ export class LaunchesController {
         console.log('Getting launches...');
         const launchData = await LaunchesController.requestFromLaunchLibarary();
         const launches = await LaunchesController.convertToLaunches(launchData);
-        console.log(JSON.stringify(launches));
+        // console.log(JSON.stringify(launches));
         return res.json(launches);
     }
     
