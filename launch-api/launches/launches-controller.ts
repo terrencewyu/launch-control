@@ -16,7 +16,7 @@ export class LaunchesController {
     
     private static async requestFromLaunchLibarary(): Promise<any> {
         console.log('Requesting launch library');
-        const uri = 'https://launchlibrary.net/1.4/launch/next/5';
+        const uri = 'https://launchlibrary.net/1.4/launch/next/5?mode=verbose';
         const options = {
             uri: uri
         };
